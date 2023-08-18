@@ -11,7 +11,6 @@ face_mesh = mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_con
 cap = cv2.VideoCapture(0)
 ngantuk_flag = False
 ngantuk_threshold = 0.02  # Ambang batas jarak bibir atas dan bibir bawah
-count_gantuk = 0
 
 while cap.isOpened():
     ret, frame = cap.read()
